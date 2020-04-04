@@ -1,4 +1,4 @@
-## Here you can find course content and homework for the JavaScript 2 module   
+## Here you can find course content and homework for the JavaScript 2 module
 
 | Week | Topic | Preparation | Homework | Lesson plan |
 | ---- | ----- | ----------- | -------- |------------ |

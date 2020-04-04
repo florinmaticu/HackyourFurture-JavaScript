@@ -1,4 +1,4 @@
-# Preparation for the second lecture:
+# Preparation for the second lecture
 
 - [Functions](http://javascript.info/function-basics) (15 min)
 - [Conditions](http://javascript.info/ifelse) (10 min)

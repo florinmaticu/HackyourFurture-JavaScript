@@ -1,6 +1,6 @@
 # JavaScript fundamentals - exercices
 
-### Given the following code:
+### Given the following code
 
 ```js
 var s = "Hello";
@@ -19,7 +19,7 @@ var l = s.length;
 
 ----
 
-### 2. In `var x = 5 + 6;`, what is `+`?
+### 2. In `var x = 5 + 6;`, what is `+`
 
 1. Function  
 2. Operator  
@@ -28,7 +28,7 @@ var l = s.length;
 
 ----
 
-### 3. In `var x = 5 + 6;`, what is `var`?
+### 3. In `var x = 5 + 6;`, what is `var`
 
 1. Variable  
 2. Keyword  
@@ -37,7 +37,7 @@ var l = s.length;
 
 ----
 
-### Given the following code:
+### Given the following code
 
 ```js
 var x = z[y];
@@ -52,7 +52,7 @@ var x = z[y];
 
 ----
 
-### Given the following code:
+### Given the following code
 
 ```js
 var y = 1;
@@ -69,7 +69,7 @@ var z = x[y];
 
 ----
 
-### Given the following code:
+### Given the following code
 
 ```js
 var joe = {
@@ -96,7 +96,7 @@ var joesAge = joe['age'];
 
 ----
 
-### Given the following code:
+### Given the following code
 
 ```js
 var y = 'length';
@@ -117,7 +117,7 @@ var z = x[y];
 
 ----
 
-### 10. What is the name of these functions?
+### 10. What is the name of these functions
 
 1. `function a() { return true; }`  
 2. `var a = function b() { return true; }`  
@@ -129,7 +129,7 @@ var z = x[y];
 
 ----
 
-### 12. Write a function call that passes three arguments.
+### 12. Write a function call that passes three arguments
 
 ----
 
@@ -156,7 +156,7 @@ var r = Math.sqrt(s);
 
 ----
 
-### 15. Indicate for each of these whether it is an expression or a statement:
+### 15. Indicate for each of these whether it is an expression or a statement
 
 1. `l`  
 2. `l = 4;`  
@@ -170,7 +170,7 @@ I. `var a = function () { return 4; }`
 
 ----
 
-### 16. How can you tell whether something is a statement?
+### 16. How can you tell whether something is a statement
 
 ----
 
@@ -178,7 +178,7 @@ I. `var a = function () { return 4; }`
 
 ----
 
-### Given the following code:
+### Given the following code
 
 ```js
 var s = "Hello".toLowerCase();

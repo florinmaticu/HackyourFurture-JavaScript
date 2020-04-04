@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -16,31 +17,33 @@ To find examples of what teachers have taught before go to the class branches in
 If you find anything that could be improved then please create a pull request! We welcome changes, so please get involved if you have any ideas!!!
 
 ---
+
 - Objects
-    - Access properties two ways: .keyname and [keyname]
-    - Key - value
-    - Array of objects
-    - Let the students explain iterating an array of objects
-    - Use real world examples (users, products, houselistings)
-    - [Code inspiration](#objects)
+  - Access properties two ways: .keyname and [keyname]
+  - Key - value
+  - Array of objects
+  - Let the students explain iterating an array of objects
+  - Use real world examples (users, products, houselistings)
+  - [Code inspiration](#objects)
 - Arrays continued
-    - `Pop`, `push`, `shift`, `unshift`
-      - Let students investigate `shift` and `unshift`
-      - The longest of the word pairs unshift, push makes the array longer!
-    - `includes` - Let the students investigate this
-    - Looping through an array
-    - No `forEach`, `map`, `filter` or `reduce`
-    - [Code inspiration](#arrays)
+  - `Pop`, `push`, `shift`, `unshift`
+    - Let students investigate `shift` and `unshift`
+    - The longest of the word pairs unshift, push makes the array longer!
+  - `includes` - Let the students investigate this
+  - Looping through an array
+  - No `forEach`, `map`, `filter` or `reduce`
+  - [Code inspiration](#arrays)
 - [Codewar exercises](#codewar-exercises)
 - Call stack
   - Used for figuring code flow in js! Where does my function go when it is done here.
-  - http://latentflip.com/loupe
+  - <http://latentflip.com/loupe>
   - [Code inspiration](#call-stack)
   - [Exercise](#call-stack-1)
 
 ## Code inspiration
 
 ### Objects
+
 ```js
 const user = {
   name: 'Emil',
@@ -158,8 +161,8 @@ const Math = {
 
 ```
 
-
 ### Call stack
+
 ```js
 function a() {
     // add to call stack
@@ -179,12 +182,12 @@ a();
 
 ```
 
-
 ## Exercises
 
 ## Call stack
 
 Draw the call stack array at every draw point
+
 ```js
 function bookPlaneTickets() {
     // draw
@@ -224,6 +227,7 @@ planTrip();
 ```
 
 ### Codewar exercises
+
 - [CodeWars - Add property to every object](https://www.codewars.com/kata/add-property-to-every-object-in-array/train/javascript)
 - [CodeWars - Color Association](https://www.codewars.com/kata/colour-association/train/javascript)
 - [CodeWars - Unfinished loop](https://www.codewars.com/kata/unfinished-loop-bug-fixing-number-1/train/javascript)

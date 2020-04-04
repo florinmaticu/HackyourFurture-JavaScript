@@ -1,13 +1,16 @@
 # Learning Goals
+
 - [ ] Async/await
 - [ ] Promises
 
 # Relevant links
+
 * [Preparation](preparation.md)
 * [Homework](homework.md)
 * [Lesson plan](lesson-plan.md)
 
 ## Promise chaining
+
 Just like we can chain array functions like this:
 
 ```js
@@ -30,9 +33,9 @@ We know that when we have a promise, we can call `.then` on that promise
 
 ```js
 fetch('http://api.open-notify.org/astros.json')
-    .then(function(response) { // <-- .then returns a promise! 
+    .then(function(response) { // <-- .then returns a promise!
         // The returned promise (from calling .then) resolves when response.json() resolves!
-        return response.json(); 
+        return response.json();
     })
     .then(function(astronautData) { // because the previous .then function returns a promise, we can call .then on that!
 

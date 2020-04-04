@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -17,7 +18,7 @@ If you find anything that could be improved then please create a pull request! W
 
 ---
 
-Promises is notoriously difficult to teach! I teach **consumption and creation of promises totally separate!** And show them that its just like with functions. There is a creation part and a comsumption part. 
+Promises is notoriously difficult to teach! I teach **consumption and creation of promises totally separate!** And show them that its just like with functions. There is a creation part and a comsumption part.
 
 First when they fully understand one part of promises, i move on! Don't overcomplicate things. Only mention the resolve function to begin with. When they get that, say that there also is a reject function. **Take as many babysteps as is possible!** Dont mention that resolve and reject can take an argument to begin with, first later explain that.
 
@@ -31,7 +32,7 @@ This class is a little poor on real world examples. Make a PR if you ahve any go
 - Promise
   - Why do we use promises?
     - So important to explain this, the students always ask this!
-    - https://stackoverflow.com/questions/39004567/why-do-we-need-promise-in-js
+    - <https://stackoverflow.com/questions/39004567/why-do-we-need-promise-in-js>
   - Consumption
     - [Code inspiration](#promise-comsumption)  
     - Example, call some function that returns a promise (like fetch)
@@ -41,7 +42,7 @@ This class is a little poor on real world examples. Make a PR if you ahve any go
     - [Exercises 3](#exercise-3) and then [Exercises 4](#exercise-4)
   - Chaining. Calling `.then` returns a promise. Only get to here when they understand async/await and promise consumption and creation.
     - [Code inspiration](#reason-for-promise)  
-    - Reason for promise: https://mobile.twitter.com/addyosmani/status/1097035418657144832?s=19
+    - Reason for promise: <https://mobile.twitter.com/addyosmani/status/1097035418657144832?s=19>
   - `Promise.all` - Let students investigate
   - `Promise.race`
   - [Exercises 5](#exercise-5) and [Exercises 6](#exercise-6)
@@ -51,6 +52,7 @@ At this point good coding practices is starting to get very important! Check our
 ## Code inspiration
 
 ### Async/await - simple usage
+
 ```js
 // Warm up exercise. The students has to say everything they can about a variable, ONLY from the variable name. Fx the type, what it returns, what object we could expect etc.
 // cars, car, title, getTitle, addTitle, isTitle, hasTitle, hasItem, users, year, yearIndex, user, review.
@@ -81,14 +83,11 @@ getAstronauts();
 
 ```
 
-
-
 ### Promise comsumption
 
 So how did the async/await example above actually work? Lets get into promises!
 
 If you have a promise, you can call two functions on that promise. '.then' and '.catch'. When are these functions called? What does it mean that a promise is resolved or rejected?
-
 
 The students should be able to answer these questions:
 // Question 1: What does it mean that a promise is resolved? Which method on a promise get called?
@@ -109,10 +108,10 @@ fetch("http://api.open-notify.org/astros.json")
 scrollTo("section.features")
   .then(() => console.log("scrolling done"))
   .catch(error => console.log(error));
-    
 
-// HAMMER in this point: 
-// When you have a promise you can call two functions on that promise (.then and .catch). '.then' is called when the promise is resolved. '.catch' is called when the promise is rejected. 
+
+// HAMMER in this point:
+// When you have a promise you can call two functions on that promise (.then and .catch). '.then' is called when the promise is resolved. '.catch' is called when the promise is rejected.
 ```
 
 ### Promise creation - A recepy for creating your own promise
@@ -159,13 +158,13 @@ orderPizzaPromise.then(pizza => {
     console.log(`Lets eat the nothing`);
 })
 
-// HAMMER in this point: 
+// HAMMER in this point:
 // When you create a new promise you give it a function that has two functions as parameters (resolve and reject). Resolve is called when everything in a promise goes well. Reject is called when something goes wrong.
 
 // Compare function creation and consumption to promise creation and consumption
 // function creation
 function test() {
-    
+
 }
 
 // function usage
@@ -204,7 +203,7 @@ setTimeout(() => {
         console.log(2);
         setTimeout(() => {
             console.log(3);
-            
+
         }, 7000);
     }, 3440);
 }, 2000);
@@ -229,6 +228,7 @@ getUser(userId)
 ```
 
 ### Function that returns a promise
+
 ```js
 // This example could definitely be more real world! Any ideas, make a pull request!
 const promise = new Promise((resolve) => {
@@ -254,7 +254,7 @@ function makeTea() {
                 color: 'green',
                 taste: 'Bitter',
             };
-            
+
             if (isThereMoreTea) {
                 resolve(tea);
             } else {
@@ -293,15 +293,17 @@ Using promises
 2. Try fetching a url that rejects fx `https://knajskdskj.jasdk`. Log out the error message
 
 ## Exercise 3
+
 1. Create a promise that resolves after 4 seconds. Use this promise to log out the text 'hello' after 4 seconds.
 2. Now make the promise fail by rejecting it with an error message instead of resolving it, and log the error message to the console.
 
 ## Exercise 4
+
 Create a function that returns a promise, that i can use like this:
 
 ```js
-// getLoggedInUsers should wait 5 seconds before it resolves with the users! 
-// Sometimes it should resolve and sometimes it should reject. 
+// getLoggedInUsers should wait 5 seconds before it resolves with the users!
+// Sometimes it should resolve and sometimes it should reject.
 // Look into Math.random
 getLoggedInUsers()
     .then(users => {
@@ -315,6 +317,7 @@ getLoggedInUsers()
 The above example show how to consume the promise using promises. Now try consume the `getLoggedInUsers` using async/await
 
 ## Exercise 5
+
 Using chaining
 
 1. Fetch the astronauts
@@ -322,4 +325,5 @@ Using chaining
 3. Log out the movies
 
 # Exercise 6
-Get the astronauts and the movies at the same time. Log out the movies and the battery status when both promises has been resolved. 
+
+Get the astronauts and the movies at the same time. Log out the movies and the battery status when both promises has been resolved.

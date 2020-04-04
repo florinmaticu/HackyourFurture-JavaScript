@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -24,10 +25,10 @@ If you find anything that could be improved then please create a pull request! W
   - General description - A function is a reusable piece of code.
   - Function usage
     - Arguments
-  - Function creation 
+  - Function creation
     - Parameters - Acts as placeholders
     - Parameters vs arguments
-    - Return value - Variable can capture return value. 
+    - Return value - Variable can capture return value.
     - Calling a function on something `Math.random` - calling the function random on Math
   - [Code inspiration](#functions)
   - [Code inspiration 2](#if-and-function)
@@ -97,6 +98,7 @@ if (isAdmin) {
 ```
 
 ### Functions
+
 ```js
 // usage
 const randomNumber = Math.random();
@@ -160,6 +162,7 @@ s.trim(); // -> "this is a string"
 ```
 
 ### If and function
+
 ```js
 function isAuthenticated (userRole) { // userRole here is different from `var userRole`
   const isAdmin = userRole === 'admin'
@@ -180,6 +183,7 @@ console.log(isAuthenticated('admin'))
 ```
 
 ### Scope
+
 ```js
 // Global scope
 const globalScopeVariable = 'globalScopeVariable';
@@ -192,7 +196,7 @@ function outerFunction() {
         // Function scope B
         console.log(globalScopeVariable);
         console.log(outerFunctionScope);
-        
+
         const innerFunctionScope = 'innerFunctionScope';
     }
 
@@ -212,6 +216,7 @@ console.log(blockScope)
 ```
 
 ### For loop
+
 ```js
 function spam (number) {
   let repeated = '' // Define the simplest case
@@ -236,7 +241,8 @@ console.log(spam(14) === 'huehuehuehuehuehuehuehuehuehuehuehuehuehue')
 ## Exercises
 
 ### If sentences
-Create an `if` sentence that will give a user a message based on his bank account balance. Use the `balance` variable and change that. 
+
+Create an `if` sentence that will give a user a message based on his bank account balance. Use the `balance` variable and change that.
 
 - If a user has 0 or less balance log out 'Please deposit some money!'
 - If a user has more than 0 and at most 1000 log out 'Your balance is looking okay'
@@ -249,13 +255,15 @@ const balance = 1000;
 ```
 
 ### Function
+
 Create a function called `getCircleArea`. It should have the `radius` of the circle as parameter and return the circle area. What happens if we dont return anything in the function?
 
-Create a function called `celciusToFahreneit` it should have a parameter called `celcius`. It should return the temperature in fahrenheit. 
+Create a function called `celciusToFahreneit` it should have a parameter called `celcius`. It should return the temperature in fahrenheit.
 
 Try call the function and check with google if the function returns the right value.
 
 ### Scope
+
 With pen and paper write what is logged out.
 
 ```js
@@ -279,10 +287,13 @@ scopeTest();
 ```
 
 ### For loop
+
 #### Simple for loop
+
 Create a for loop that logs out the numbers from 74 - 98
 
 #### For loop in a function
+
 Create a function that has two parameters: `stringToLog` and `numberOfTimesToLog`
 
 When calling the function it should log out the `stringToLog` the amount of times specified in `numberOfTimesToLog`. Use a for loop.
@@ -295,6 +306,7 @@ logString('hello', 3);
 ```
 
 ### Send emails
+
 Imagine we work at a company. Peter from the HR department wants us to send out a couple of emails to some recepients. The only problem is that he sent us the email in a weird format: `benjamin@gmail.com|peter@gmail.com|hans@gmail.com|ahmad@gmail.com|sana@gmail.com|virgeen@gmail.com|mohammed@gmail.com`
 
 Use the `sendEmailTo` function to send an email to all the recepients that we got from Peter.

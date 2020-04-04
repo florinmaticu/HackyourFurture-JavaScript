@@ -1,23 +1,26 @@
 ## Learning goals
+
 - [ ] Array functions
   - [ ] ForEach
   - [ ] [Map](#map)
   - [ ] [Filter](#filter)
 - [ ] [Arrow function](#Arrow-functions)
+
 <!---
 - [ ] Code flow, using the [call stack](../../javaScript1/week3/readme.md#call-stack)
 -->
+
 ## Relevant links
+
 * [Preparation](preparation.md)
 * [Homework](homework.md)
 * [Lesson plan](lesson-plan.md)
 
-
 ## Array methods map, filter and sort
 
 ### Map
-The map function works on arrays. It maps (think transform) the elements of an array. Or from MDN: "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
 
+The map function works on arrays. It maps (think transform) the elements of an array. Or from MDN: "The map() method creates a new array with the results of calling a provided function on every element in the calling array."
 
 ```js
 // lets first create an array of three cars
@@ -56,10 +59,9 @@ const carSpeeds = cars.map(function(car) {
 console.log(carSpeeds); // [45, 87, 78]
 ```
 
-
 ### Filter
 
-The filter function works on arrays and it filters out elements in our array. 
+The filter function works on arrays and it filters out elements in our array.
 It takes a function as input. This function is called on every element in the array. Just like forEach. If this function we create returns true the element is saved in the, if we return false the element is filtered out.
 
 ```js
@@ -79,11 +81,10 @@ const fastCars = cars.filter(function(car) {
 console.log(fastCars); // logs the BMW and the Fiat
 ```
 
-
 ### Sort
 
 The sort function works on arrays. It sorts the elements of the array.
-To see details see here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+To see details see here: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort>
 
 ```js
 // lets use the same cars array
@@ -97,6 +98,7 @@ console.log(sortedCars); // it will return an array with the BMW object first, t
 ```
 
 ### Arrow functions
+
 Functions can be written as arrow functions, it looks like this:
 
 ```js
@@ -120,16 +122,18 @@ const getTimesTenArrowFunction = a => a * 10;
 ```
 
 Here is how you **convert a function into an arrow function:**
+
 1. Remove the keyword function
 2. Add an arrow after the parameter
 3. If there is only one parameter, we can remove the paranthesis around the parameter
 4. If the function is returning a single line of code, we can remove the return keyword and the curly braces.
 
-
 ### Chaining
-We can chain array methods after each other. 
+
+We can chain array methods after each other.
 
 So if we wanted an array of fast cars brands we could do this:
+
 ```js
 // Broken down
 const fastCars = cars
@@ -150,7 +154,8 @@ const fastCars = cars
 
 // fastCars is an array! Arrays we can call .map on, so why not do it in one go!?
 ```
-Calling the `filter` function, returns an array (in our case an array of objects, that represent fast cars). We know that we can call `.map` on an array, doing that we get the chaining of methods. 
+
+Calling the `filter` function, returns an array (in our case an array of objects, that represent fast cars). We know that we can call `.map` on an array, doing that we get the chaining of methods.
 
 The principal behind is exactly the same as in this example:
 
@@ -164,4 +169,3 @@ doesBenjaminEndWithNFormatted = "BENJAMIN"
 ```
 
 We are chaining methods on the return of the previous function's return value!
-

@@ -1,4 +1,5 @@
 ## Learning goals
+
 - [ ] Intro JavaScript (What is it, what can you use it for)
 - [ ] Setup js either via browser or via node
 - [ ] Console.log
@@ -10,6 +11,7 @@
 Focus on how to read documentation, google answers and google errors
 
 ## Relevant links
+
 * [Preparation](preparation.md)
 * [Homework](homework.md)
 * [Lesson plan](lesson-plan.md)

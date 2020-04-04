@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -40,9 +41,7 @@ If you find anything that could be improved then please create a pull request! W
 - Code flow, using the [call stack](../../JavaScript1/Week3/readme.md#call-stack)
 -->
 
-
 [Listing project](#listing-project)
-
 
 ## Code inspiration
 
@@ -60,7 +59,8 @@ const mentors = [
 
 console.log(mentors);
 ```
-### ForEach 
+
+### ForEach
 
 ```js
 mentors.forEach(function(mentor) {
@@ -119,7 +119,6 @@ function mapHomemade(array, functionToExecute) {
 }
 ```
 
-
 ### Filter
 
 ```js
@@ -161,7 +160,6 @@ function FilterHomemade(array, functionToExecute) {
 }
 ```
 
-
 ### Arrow function
 
 ```js
@@ -185,8 +183,8 @@ const circleArea3 = radius => radius * 2 * Math.pi;
 
 ```
 
-
 ### Other example
+
 ```js
 function filterMentorList(courseID) {
     const resultHtml = document.getElementById('result');
@@ -196,7 +194,7 @@ function filterMentorList(courseID) {
     listHtml += '<div> Susane</div>';
     listHtml += '<div> Sara</div>';
     resultHtml.innerHTML = listHtml;
-    
+
     console.log('courseID', courseID);
 }
 
@@ -207,9 +205,9 @@ let modifiedMentors = mentors.map(function(mentor) {
     mentor.age = mentor["name"].length;
     // if(mentor["name"].length >10)
     // mentor.name = "Mr " + mentor.name;
-    // else 
+    // else
     // mentor.name = "Ms " + mentor.name;
-    
+
     return mentor;
 
 });
@@ -236,14 +234,13 @@ function filterMentorList(courseID) {
     const resultHtml = document.getElementById('result');
     let listHtml = '';
     for(let i=0; i<mentors.length; i++){
-    
+
         listHtml += `<div> ${mentors[i].name}</div>`;
-    } 
+    }
     resultHtml.innerHTML = listHtml;
     console.log('courseID', courseID);
-} 
+}
 ```
-
 
 ## Exercises
 
@@ -263,7 +260,7 @@ function randomIntFromInterval(min, max) {
 
 /**
  * Get an array with listing objects with random color and speed
- * @param {integer} numberOfListings - The number of listings 
+ * @param {integer} numberOfListings - The number of listings
  * @returns {array} Array containing the listing objects
  */
 function generateListings(numberOfListings) {
@@ -271,7 +268,7 @@ function generateListings(numberOfListings) {
 
     const listingType = ['House', 'Apartment', 'Shed', 'Dorm', 'Farm'];
     const listingFacilities = ['Parkering', 'Elevator', 'Altan', 'Have', 'Husdyr'];
-    
+
     for (let i = 0; i < numberOfListings; i++) {
         const listing = {};
         const randomTypeIndex = randomIntFromInterval(0, listingType.length - 1);
@@ -280,7 +277,7 @@ function generateListings(numberOfListings) {
         for(let i = 0; i < numberOfFacilities; i++) {
             const randomIndexFacilities = randomIntFromInterval(0, listingFacilities.length - 1);
             const randomFacility = listingFacilities[randomIndexFacilities];
-            
+
             if (!(facilities.includes(randomFacility))) {
                 facilities.push(randomFacility);
             }
@@ -303,26 +300,31 @@ generateListings(20);
 ```
 
 ### ForEach
+
 - Create 37 listings and log out every listings size
 
 ### Map
-- Create an array that contains all the 37 listing prices. 
 
-### Filter 
+- Create an array that contains all the 37 listing prices.
+
+### Filter
+
 Using the 37 listings from the previous tasks
+
 - Create an array of cheap listings. You define what cheap means. Each item in this array should be of type object
 - Create an array of expensize listings prices. Each item in this array should be of type number
 - Create an array of listings that have parking. Each item in this array should be of type object
 
-
 ### Arrow functions
+
 Rewrite the code above (`forEach`, `map` and `filter`) to arrow functions.
 
-
 ### Listing project
-Imagine we have a website like https://danskebank.dk/bolig/sogning?sorter=hoejt-forbrug where a user can search for different parameters. Fx What type the listing should be, the price, size, location etc etc. 
+
+Imagine we have a website like <https://danskebank.dk/bolig/sogning?sorter=hoejt-forbrug> where a user can search for different parameters. Fx What type the listing should be, the price, size, location etc etc.
 
 #### Filter listings
+
 If a user fx click on a button indicating that the user only wants listings that are of the type farm. Lets try and  imagine how we would use a function to create this functionality:
 
 ```js
@@ -335,7 +337,7 @@ const filter = {
 const farmListings = filterListings(listings, filter);
 ```
 
-Okay, so the `filterListings` function takes a filter which is an `object`. Say the user wants farm listings that cost more than 1.500.000. 
+Okay, so the `filterListings` function takes a filter which is an `object`. Say the user wants farm listings that cost more than 1.500.000.
 
 ```js
 const filter2 = {
@@ -349,6 +351,6 @@ const cheapFarmListings = filterListings(listings, filter2);
 
 Your job is to create the `filterListings` function. The function should support these filters: type, facilities, price , hasGarden and size. Use arrow functions!
 
-
 #### Render listings
-Now create a function called `renderListings`. It should have one parameter: `listings`. When called the function should render the listings in an html list. How it should be rendered is up to you, but you could take inspiration from https://danskebank.dk/bolig/sogning?sorter=hoejt-forbrug
+
+Now create a function called `renderListings`. It should have one parameter: `listings`. When called the function should render the listings in an html list. How it should be rendered is up to you, but you could take inspiration from <https://danskebank.dk/bolig/sogning?sorter=hoejt-forbrug>

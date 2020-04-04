@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -23,16 +24,17 @@ If you find anything that could be improved then please create a pull request! W
   - Where is the script tag being loaded
 
 DOM
-  - What is it and what do developers use the DOM for?
-  - DOM manipulation
-    - Get elements
-    - Create elements
-    - Insert elements - let students investigate `appendChild`, `insertBefore`
-    - Element manipulation (`style`, `innerHTML`, `text`)
-    - Document object
-    - [Code inspiration simple](#dom)
-    - [Code inspiration change logo](#change-logo)
-    - Exercises: [Favorite dishes](#favorite-dishes), [podcasts](#podcast), [image inserter](#image-inserter)
+
+- What is it and what do developers use the DOM for?
+- DOM manipulation
+  - Get elements
+  - Create elements
+  - Insert elements - let students investigate `appendChild`, `insertBefore`
+  - Element manipulation (`style`, `innerHTML`, `text`)
+  - Document object
+  - [Code inspiration simple](#dom)
+  - [Code inspiration change logo](#change-logo)
+  - Exercises: [Favorite dishes](#favorite-dishes), [podcasts](#podcast), [image inserter](#image-inserter)
 
 - Event listeners - Focus on usage, no explanation of callback
   - Click, mouseover, etc. Explain one and let students investigate another, like mouseover or mousemove
@@ -42,11 +44,12 @@ DOM
   - [Exercise simple](#simple-eventlistener)
   - [Exercise dark mode light mode](#light-mode-dark-mode)
 
-Really try in this class to do short teaching and lots of exercises! 
+Really try in this class to do short teaching and lots of exercises!
 
 ## Code inspiration
 
 ### DOM
+
 ```js
 const eventElement = document.querySelector('.events');
 eventElement.innerHTML = "Soccer training Wednesday";
@@ -62,6 +65,7 @@ body.appendChild(div)
 ```
 
 ### Change logo
+
 ```js
 function changeLogo() {
   let logo = document.getElementById('logo');
@@ -90,9 +94,10 @@ document.querySelector('button').addEventListener('click', function(event) {
 ## Exercises
 
 ### Favorite dishes
+
 Create an array of strings with your favorite dishes.
 
-With js select a `ul` in the DOM. You add the `ul` to the html file. 
+With js select a `ul` in the DOM. You add the `ul` to the html file.
 
 Now loop through each element of the favorite dishes array, you create an `li` element and set the text to the favorite dish.
 
@@ -118,6 +123,7 @@ const podcasts = [{
     }
 ];
 ```
+
 1. Create a `ul`
 2. Loop through the podcasts
 3. For every podast:
@@ -139,10 +145,12 @@ notThisFunctionName('https://picsum.photos/536/354', document.querySelector('bod
 ```
 
 ### Simple eventlistener
+
 When clicking a button, change the text on the button to say "Button clicked"
 
 ### Light mode dark mode
+
 Clicking a button should toggle the background color of the body and the text color in the page.
 If the background is white and the text is black, then clicking the button will make the background dark and the text white and vice versa
 
-*Optional* also make the text on the button change. 
+*Optional* also make the text on the button change.

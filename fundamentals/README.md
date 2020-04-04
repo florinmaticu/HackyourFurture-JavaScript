@@ -57,7 +57,6 @@ var x;
 console.log(typeof x); // -> "undefined"
 ```
 
-
 ## Arrays
 
 Variables that are arrays contain a list of things, instead of just one thing. What's inside the array, we typically call "elements". So, the array `[1, 2, 3]` has three elements. The array `[]` has no elements and is therefore empty. The number of elements in an array is called its "length".
@@ -83,12 +82,9 @@ console.log(arr[a]); // -> jane
 
 If the index you use is not an integer (a whole number), or if it's less than `0` or if it's greater than or equal to the array's length, you will get back `undefined`.
 
-
-
 ## Objects
 
 Variables that are objects also contain a list of things, but instead of them being in some specific order, they can be assigned to words, called "keys". Instead of "elements" the things that are inside objects are called "properties".
-
 
 ```js
 var obj = {name: 'John', age: 24};
@@ -115,7 +111,6 @@ Remember that there is a very big difference between `obj[name]` and `obj["name"
 > Note:
 >
 > Thinking back of arrays, the length of an array can be retrieved by `arr.length`. So as mentioned before, arrays are just like other JavaScript objects. You could even write `arr['length']` to access the `length` property of the array. JavaScript will look: is what we put between brackets a number? Then it is an index and we'll look up the correct array element. If it's a string, it's a key and we will look up the corresponding property.
-
 
 ## Functions
 
@@ -194,7 +189,6 @@ myArray.slice();
 myNumber.toString();
 ...
 ```
-
 
 ## Statements & expressions
 

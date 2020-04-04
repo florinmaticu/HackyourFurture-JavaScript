@@ -1,9 +1,11 @@
 ## Learning goals
+
 - [ ] Arrays continued: pop, push, shift, unshift, length, indexOf. No map, filter or reduce
 - [ ] [Objects](#Objects): Access properties two ways, key value. Array of objects. Use real world examples (users, products, houselistings)
 - [ ] [Call stack](#Call-stack)
 
 ## Relevant links
+
 * [Preparation](preparation.md)
 * [Homework](homework.md)
 * [Lesson plan](lesson-plan.md)
@@ -11,7 +13,6 @@
 ## Objects
 
 Variables that are objects also contain a list of things, but instead of them being in some specific order, they can be assigned to words, called "keys". Instead of "elements" the things that are inside objects are called "properties".
-
 
 ```js
 let obj = {name: 'John', age: 24};
@@ -39,12 +40,12 @@ Remember that there is a very big difference between `obj[name]` and `obj["name"
 >
 > Thinking back of arrays, the length of an array can be retrieved by `arr.length`. So as mentioned before, arrays are just like other JavaScript objects. You could even write `arr['length']` to access the `length` property of the array. JavaScript will look: is what we put between brackets a number? Then it is an index and we'll look up the correct array element. If it's a string, it's a key and we will look up the corresponding property.
 
-
 ## Call stack
+
 When a function is called it is pushed to the call stack.
 When a function is finished the function gets shifted from the call stack.
 
-Visualize here: http://latentflip.com/loupe
+Visualize here: <http://latentflip.com/loupe>
 
 ```js
 function pickUpKids() {
@@ -54,7 +55,7 @@ function pickUpKids() {
 }
 
 function buyCarrots() {
-    
+
 }
 
 function buyVegetables() {
@@ -68,7 +69,7 @@ function getGroceries() {
 }
 
 function doWork() {
-    
+
 }
 
 pickUpKids();

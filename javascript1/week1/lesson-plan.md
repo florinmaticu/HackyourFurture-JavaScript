@@ -1,4 +1,5 @@
 # Lesson plan
+
 ```
 > Focus on having lots of in class exercises.
 
@@ -19,7 +20,7 @@ If you find anything that could be improved then please create a pull request! W
 
 - Intro JavaScript
   - What is it, what can you use it for
-- Setup js either via browser or via node. 
+- Setup js either via browser or via node.
   - Mentors decision.
 - Console.log
   - Depending on node or browser explain where the logs can be found.
@@ -36,10 +37,10 @@ If you find anything that could be improved then please create a pull request! W
   - `Number`
     - Show float and int is just a number in js
   - `Array`
-      - Creation
-      - Indexing
-      - Items
-      - No map, filter, push etc!
+    - Creation
+    - Indexing
+    - Items
+    - No map, filter, push etc!
   - `Boolean` - Students investigate `boolean` and explain for fellow students
   - [Code inspiration](#variable-types)
   - [Exercises](#variable-types-1)
@@ -68,7 +69,6 @@ If you find anything that could be improved then please create a pull request! W
   - How to read and fix errors. Show some practical examples.
   - [Exercise](#fix-the-errors)
 - [Last exercise, pizza project](#pizza-project)
-
 
 ## Code inspiration
 
@@ -144,6 +144,7 @@ console.log(stringConst2.length);
 ```
 
 ### Equality
+
 ```js
 console.log(1 == 1);
 console.log(1 == 2);
@@ -168,6 +169,7 @@ console.log((1 !== 1 || 3 === 4) && true );
 ```
 
 ### Arithmetic operators
+
 ```js
 console.log(1 + 2);
 
@@ -186,6 +188,7 @@ console.log("hello " + "23");
 ## Exercises
 
 ## Variable types
+
 With pen and paper write down what is logged out:
 
 ```js
@@ -206,6 +209,7 @@ console.log(typeof true);
 ```
 
 ### Follow up exercises
+
 1. Create a variable that is 24 times 55
 2. Create a const and set it to be equal to your name
 3. With javascript `console.log` the first character in your name
@@ -213,8 +217,8 @@ console.log(typeof true);
 5. `console.log` the 4. element in the array made above
 6. *Optional* with javascript `console.log` the last character in your name.
 
-
 ### Fix the errors
+
 Fix the errors in this script:
 
 ```js
@@ -233,6 +237,7 @@ const lastUser = users[3];
 ### Pizza project
 
 #### Part 1
+
 1. Create a special new folder called "pizza-exercise"
 2. Inside the folder create a new html file called "index.html"
 3. Also inside the folder create a new JavaScript file called "pizza.js"
@@ -244,8 +249,8 @@ const lastUser = users[3];
 8. Now log at statement to the console that will show the pizza man the entire pizza order in a language he understands, eg. like this:
 ```New pizza order: <name of pizza>. The price of the pizza is:  <price of pizza>```
 
-
 #### Part 2
+
 Now we will modify the program so that you can order multiple pizzas and also decide if the pizzas should be family size
 
 1. Create a new variable to store the amount of pizzas you would like to order
@@ -258,4 +263,3 @@ Now we will modify the program so that you can order multiple pizzas and also de
 ```New pizza order: <amount of pizzas> <family or not?> <name of pizza>. Total cost for the order is:  <total price>```
 
 5. Try to change the price of the pizza and if the pizza should be family size, and then check if the total price is calculated correctly.
-

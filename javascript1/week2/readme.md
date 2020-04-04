@@ -1,31 +1,33 @@
 ## Learning goals
+
 - [ ] Conditions: if, elseif, else. Negated.
 - [ ] [Functions](#Functions): [Calling](#calling-a-function-on-something), defining, [parameters, arguments](#parameters--arguments)
 - [ ] Global vs local scope
 - [ ] For loop
 
-Teaching note. Start off explaining functions with how to use a function fx explain why the Math.random function is smart, or Math.max. 
+Teaching note. Start off explaining functions with how to use a function fx explain why the Math.random function is smart, or Math.max.
 
 ## Relevant links
+
 * [Preparation](preparation.md)
 * [Homework](homework.md)
 * [Lesson plan](lesson-plan.md)
 
-### Recap Logical operators:
+### Recap Logical operators
 
 ```js
 0 = false
 1 = true
 ```
 
-#### AND `&&`   
+#### AND `&&`
 
 | `&&` |0|1|
 |------|-|-|
 |0|0|0|
 |1|0|1|
 
-#### OR `||` 
+#### OR `||`
 
 | `\|\|` |0|1|
 |------|-|-|
@@ -33,6 +35,7 @@ Teaching note. Start off explaining functions with how to use a function fx expl
 |1|1|1|
 
 So you can say that false in combination with `&&` always returns false
+
 ```js
 true && false //-> false
 false && true //-> false
@@ -42,12 +45,13 @@ true || false //-> true
 
 ### Typeof
 
-`typeof` always returns the data type in a string. 
+`typeof` always returns the data type in a string.
 
 So for example:
+
 ```js
-let bar = 42; 
-typeof bar    //-> 'number' 
+let bar = 42;
+typeof bar    //-> 'number'
 typeof typeof bar; //->  'string'
 ```
 
@@ -55,7 +59,7 @@ So the data type of what `typeof` returns is always a string, bar on the other h
 
 ## Functions
 
-A function is a reusable piece of code. It is used to hide away abstraction! Functions are *very* important in JavaScript, to the extent that some people call JavaScript a "function-oriented" language. 
+A function is a reusable piece of code. It is used to hide away abstraction! Functions are *very* important in JavaScript, to the extent that some people call JavaScript a "function-oriented" language.
 
 ### Two sides of a function
 
@@ -107,7 +111,6 @@ function sum(a, b) {
 }
 ```
 
-
 ```js
 // 5 and 10 are called arguments now when called in a function
 // Arguments are "passed" to the function: "we pass `4` and `5` to the function sum
@@ -135,6 +138,7 @@ multiply(10 * 4);
 ```
 
 ##### Return value
+
 Sometimes we want to get a value back when calling a function. Fx in the sum example. We want to call the function and get the sum back!
 
 ```js
@@ -155,7 +159,6 @@ console.log(returnedSum); // logs undefined
 
 If we dont return anything from the function, it will automatically return `undefined`. This is the functions way of saying that nothing was returned.
 
-
 ### Calling a function on something
 
 In JavaScript, you can call functions *on* something. By this, we mean that you use the dot to call the function. For instance, when we say "call method `trim` on string `s`", we mean:
@@ -173,4 +176,3 @@ sum(4, 5); // -> 9
 ```
 
 Here, you call the function `sum` on nothing.
-
